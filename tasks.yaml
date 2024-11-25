@@ -1,0 +1,24 @@
+tasks:
+  - name: "create_users_table"
+    connection:
+      host: "localhost"
+      port: 5432
+      database: "my_database"
+      user: "my_user"
+      password: "my_password"
+    script: |
+      CREATE TABLE IF NOT EXISTS users (
+          id SERIAL PRIMARY KEY,
+          name TEXT NOT NULL,
+          email TEXT NOT NULL UNIQUE
+      );
+
+  - name: "insert_user"
+    connection:
+      host: "localhost"
+      port: 5432
+      database: "my_database"
+      user: "my_user"
+      password: "my_password"
+    script: |
+      INSERT INTO users (name, email) VALUES ('Bob', 'bob@example.com');
