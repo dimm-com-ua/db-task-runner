@@ -26,8 +26,9 @@ A simple command-line tool written in Rust for executing predefined PostgreSQL s
 ```
 
 2. Build the executable
-    ```bash
+ ```bash
    cargo build --release
+```
 3. The binary will be available in `target/release/`
 
 ---
@@ -35,9 +36,9 @@ A simple command-line tool written in Rust for executing predefined PostgreSQL s
 ## Usage
 
 ### Run the tool
-    ```bash
-    ./postgres-script-runner -f <config-file.yaml> -c <command-name>
-
+ ```bash
+    ./target/release/postgres-script-runner -f <config-file.yaml> -c <command-name>
+```
 ### Options
 - `-f, --file`: Path to the YAML file containing task definition
 - `-c, --command`: Name of the task to execute.
