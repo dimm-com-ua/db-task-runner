@@ -20,9 +20,10 @@ A simple command-line tool written in Rust for executing predefined PostgreSQL s
 
 ## Installation
 1. Clone this repository:
-   ```bash
-   git clone <repository-url>
-   cd <repository-name>
+```bash
+   git clone https://github.com/dimm-com-ua/db-task-runner.git
+   cd db-task-runner
+```
 
 2. Build the executable
     ```bash

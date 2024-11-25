@@ -11,21 +11,21 @@ pub struct Cli {
 
 #[derive(Deserialize, Debug)]
 pub struct Task {
-    pub(crate) name: String,
-    pub(crate) connection: Connection,
-    pub(crate) script: String
+    pub name: String,
+    pub connection: Connection,
+    pub script: String
 }
 
 #[derive(Deserialize, Debug)]
 pub struct Connection {
-    pub(crate) host: String,
-    pub(crate) port: u16,
-    pub(crate) database: String,
-    pub(crate) user: String,
-    pub(crate) password: String
+    pub host: String,
+    pub port: u16,
+    pub database: String,
+    pub user: String,
+    pub password: String
 }
 
 #[derive(Deserialize, Debug)]
 pub struct Config {
-    pub(crate) tasks: Vec<Task>
+    pub tasks: Vec<Task>
 }
